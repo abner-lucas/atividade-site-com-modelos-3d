@@ -1,0 +1,6 @@
+{
+  "name": "Atividade: Criação de Site com Modelos 3D",
+  "description": "Roteiro e guia didático para estudantes desenvolverem e publicarem o site Mundo 3D com modelos criados no Tinkercad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
