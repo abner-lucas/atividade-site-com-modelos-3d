@@ -170,9 +170,23 @@ export const PreviewSection: React.FC = () => {
       </div>
 
       <p className="text-sm text-slate-600 mb-4">
-        Esta é uma <strong>demonstração interativa real</strong> do site <em>“Mundo 3D”</em> construído com a estrutura
-        HTML, CSS e JavaScript que vocês usarão. Você pode clicar e arrastar os modelos com o mouse ou toque para inspecioná-los em 360°.
+        Abaixo há uma simulação de como o site ficará estruturado. Você pode interagir com os objetos nela.
+        Mas para ter a experiência completa em tela cheia, acesse o exemplo final abaixo:
       </p>
+
+      <div className="mb-6 flex">
+        <a 
+          href="https://abner-lucas.github.io/webpage-modelo-3d/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors"
+        >
+          <span>Ver Demonstração Interativa Completa</span>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
 
       {/* Frame de Simulação do Site do Aluno */}
       <div className="w-full mx-auto border border-slate-300 rounded-xl overflow-hidden shadow-md bg-white">
