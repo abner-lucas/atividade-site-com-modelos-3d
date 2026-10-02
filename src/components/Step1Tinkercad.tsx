@@ -90,30 +90,7 @@ export const Step1Tinkercad: React.FC = () => {
           </div>
         </div>
 
-        {/* Botões de Ação para o Tinkercad */}
-        <div className="pt-2 flex flex-wrap items-center gap-3">
-          <a
-            href={activityConfig.links.tinkercadBase}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-lg shadow-xs transition-colors"
-          >
-            <span>Acessar Tinkercad</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
 
-          {activityConfig.links.tinkercadClassroom && (
-            <a
-              href={activityConfig.links.tinkercadClassroom}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs sm:text-sm font-medium rounded-lg border border-slate-200 transition-colors"
-            >
-              <span>Acessar Sala de Aula do Tinkercad</span>
-              <ExternalLink className="w-3.5 h-3.5 text-slate-500" />
-            </a>
-          )}
-        </div>
       </div>
     </section>
   );
