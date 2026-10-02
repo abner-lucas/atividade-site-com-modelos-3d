@@ -18,8 +18,8 @@ export async function downloadStudentZip(
 
   if (onProgress) onProgress('Preparando códigos HTML, CSS e JavaScript...');
   zip.file('index.html', studentIndexHtml);
-  zip.file('style.css', studentStyleCss);
-  zip.file('script.js', studentScriptJs);
+  zip.file('estilo.css', studentStyleCss);
+  zip.file('codigo.js', studentScriptJs);
 
   if (onProgress) onProgress('Gerando modelo1.glb (Robô Explorador)...');
   const model1Buffer = await exportGroupToGLB(createSampleModel1());

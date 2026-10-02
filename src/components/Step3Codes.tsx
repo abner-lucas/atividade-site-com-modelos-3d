@@ -198,7 +198,7 @@ export const Step3Codes: React.FC = () => {
               <h4 className="text-base sm:text-lg font-bold">Pacote Inicial Completo: mundo-3d.zip</h4>
             </div>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-              Baixe o ZIP pronto contendo <code className="text-blue-200">index.html</code>, <code className="text-blue-200">style.css</code>, <code className="text-blue-200">script.js</code> e dois modelos demonstrativos para testes imediatos.
+              Baixe o ZIP pronto contendo <code className="text-blue-200">index.html</code>, <code className="text-blue-200">estilo.css</code>, <code className="text-blue-200">codigo.js</code> e dois modelos demonstrativos para testes imediatos.
             </p>
           </div>
 
@@ -259,10 +259,10 @@ export const Step3Codes: React.FC = () => {
             language="html"
           />
 
-          {/* 2. style.css */}
+          {/* 2. estilo.css */}
           <CodeBlockItem
             id="code-css"
-            filename="style.css"
+            filename="estilo.css"
             badgeType="CSS3"
             icon={<FileCode className="w-4 h-4 text-sky-600" />}
             summaryTitle="Estilos visuais, cards e responsividade"
@@ -276,10 +276,10 @@ export const Step3Codes: React.FC = () => {
             language="css"
           />
 
-          {/* 3. script.js */}
+          {/* 3. codigo.js */}
           <CodeBlockItem
             id="code-js"
-            filename="script.js"
+            filename="codigo.js"
             badgeType="JavaScript (Three.js)"
             icon={<Code2 className="w-4 h-4 text-yellow-600" />}
             summaryTitle="Inicialização WebGL, iluminação e animação 3D"
