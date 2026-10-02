@@ -226,7 +226,7 @@ export const Step3Codes: React.FC = () => {
               )}
             </button>
             <span className="text-[11px] text-blue-200">
-              Contém os 5 arquivos na raiz do ZIP
+              Cont�m os 4 arquivos na raiz do ZIP
             </span>
           </div>
         </div>
@@ -235,8 +235,8 @@ export const Step3Codes: React.FC = () => {
         <div className="p-4 rounded-lg bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 flex items-start gap-3">
           <Sparkles className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
           <p>
-            <strong>Importante sobre os modelos do pacote ZIP:</strong> Os arquivos <code className="font-mono bg-white px-1.5 py-0.5 rounded border border-slate-200 text-blue-800">modelo1.glb</code> e <code className="font-mono bg-white px-1.5 py-0.5 rounded border border-slate-200 text-blue-800">modelo2.glb</code> incluídos no download são <em>modelos demonstrativos</em> para você testar a página imediatamente. 
-            A sua dupla deve <strong>substituí-los pelos modelos que vocês criaram e exportaram do Tinkercad</strong>.
+            <strong>Importante sobre os modelos do pacote ZIP:</strong> O arquivo <code className="font-mono bg-white px-1.5 py-0.5 rounded border border-slate-200 text-blue-800">aviaozinho.glb</code> inclu�do no download � umcê testar a página imediatamente. 
+            A sua dupla deve <strong>substitu�-lo pelos modelos que vocês criaram e exportaram do Tinkercad</strong>.
           </p>
         </div>
 
@@ -283,9 +283,9 @@ export const Step3Codes: React.FC = () => {
             badgeType="JavaScript (Three.js)"
             icon={<Code2 className="w-4 h-4 text-yellow-600" />}
             summaryTitle="Inicialização WebGL, iluminação e animação 3D"
-            description="Executa após o carregamento do DOM. Inicializa duas cenas Three.js independentes para renderizar './modelo1.glb' e './modelo2.glb'. Cria câmera perspectiva, luz ambiente, duas luzes direcionais (estúdio 3 pontos), grade no piso, centraliza automaticamente os modelos pelo cálculo do Box3 e adiciona animação de rotação contínua e controle por toque/mouse."
+            description="Executa após o carregamento do DOM. Inicializa duas cenas Three.js independentes para renderizar os arquivos .glb'. Cria câmera perspectiva, luz ambiente, duas luzes direcionais (estúdio 3 pontos), grade no piso, centraliza automaticamente os modelos pelo cálculo do Box3 e adiciona animação de rotação contínua e controle por toque/mouse."
             customizationTips={[
-              'Não altere os nomes dos arquivos "./modelo1.glb" e "./modelo2.glb" no final do script, para evitar que o carregador falhe.',
+              'Lembre-se de alterar o nome de "./aviaozinho.glb" para o nome do seu arquivo real na hora de testar!',
               'Você pode ajustar a velocidade de rotação alterando o valor em "modeloCarregado.rotation.y += 0.008".',
               'Caso queira mudar a cor de fundo do visualizador 3D, altere "scene.background = new THREE.Color(0x0b1120)".',
             ]}

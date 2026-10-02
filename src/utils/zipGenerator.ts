@@ -1,15 +1,14 @@
 import JSZip from 'jszip';
 import { studentIndexHtml, studentStyleCss, studentScriptJs } from '../data/studentCode';
-import { createSampleModel1, createSampleModel2, exportGroupToGLB } from './sampleModels';
+import { createSampleModel1, exportGroupToGLB } from './sampleModels';
 
 /**
- * Cria e dispara o download do arquivo 'mundo-3d.zip' contendo exatamente os 5 arquivos
+ * Cria e dispara o download do arquivo 'mundo-3d.zip' contendo exatamente os 4 arquivos
  * na raiz do arquivo compactado:
  * 1. index.html
- * 2. style.css
- * 3. script.js
- * 4. modelo1.glb (modelo 3D funcional de exemplo)
- * 5. modelo2.glb (modelo 3D funcional de exemplo)
+ * 2. estilo.css
+ * 3. codigo.js
+ * 4. aviaozinho.glb (modelo 3D funcional de exemplo)
  */
 export async function downloadStudentZip(
   onProgress?: (step: string) => void
@@ -21,13 +20,9 @@ export async function downloadStudentZip(
   zip.file('estilo.css', studentStyleCss);
   zip.file('codigo.js', studentScriptJs);
 
-  if (onProgress) onProgress('Gerando modelo1.glb (Robô Explorador)...');
+  if (onProgress) onProgress('Gerando aviaozinho.glb (Modelo de exemplo)...');
   const model1Buffer = await exportGroupToGLB(createSampleModel1());
-  zip.file('modelo1.glb', model1Buffer);
-
-  if (onProgress) onProgress('Gerando modelo2.glb (Foguete Orbital)...');
-  const model2Buffer = await exportGroupToGLB(createSampleModel2());
-  zip.file('modelo2.glb', model2Buffer);
+  zip.file('aviaozinho.glb', model1Buffer);
 
   if (onProgress) onProgress('Compactando arquivo mundo-3d.zip...');
   const zipBlob = await zip.generateAsync({
