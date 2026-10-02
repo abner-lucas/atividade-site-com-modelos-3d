@@ -27,7 +27,8 @@ export const PreviewSection: React.FC = () => {
       const height = container.clientHeight || 260;
 
       const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-      camera.position.set(0, 1.4, 3.8);
+      camera.position.set(0, 0.2, 4.2);
+      camera.lookAt(0, 0, 0);
 
       const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       renderer.setSize(width, height);
@@ -207,29 +208,29 @@ export const PreviewSection: React.FC = () => {
             3ª Avaliação - Computação Gráfica
           </h1>
 
-          <div className="flex flex-wrap justify-center gap-10">
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 w-full max-w-3xl">
             {/* Cartão Aluno 1 */}
-            <div className="flex flex-col items-center">
-              <h2 className="text-[#4a5568] text-lg font-bold mb-4">Insira o nome do Aluno 1 aqui</h2>
+            <div className="flex flex-col items-center flex-1 w-full max-w-[320px]">
+              <h2 className="text-[#4a5568] text-base sm:text-lg font-bold mb-4 text-center">Insira o nome do Aluno 1 aqui</h2>
               <div
                 ref={canvas1Ref}
-                className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden cursor-grab active:cursor-grabbing"
+                className="w-full aspect-square rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden cursor-grab active:cursor-grabbing"
                 style={{ background: 'linear-gradient(135deg, #87CEEB, #e0f6ff)' }}
               />
-              <p className="max-w-[300px] sm:max-w-[350px] text-center text-[#555] text-sm mt-4 leading-relaxed">
+              <p className="w-full text-center text-[#555] text-xs sm:text-sm mt-4 leading-relaxed">
                 Descreva seu objeto aqui (ex: Avião de papel modelado no Blender...)
               </p>
             </div>
 
             {/* Cartão Aluno 2 */}
-            <div className="flex flex-col items-center">
-              <h2 className="text-[#4a5568] text-lg font-bold mb-4">Insira o nome do Aluno 2 aqui</h2>
+            <div className="flex flex-col items-center flex-1 w-full max-w-[320px]">
+              <h2 className="text-[#4a5568] text-base sm:text-lg font-bold mb-4 text-center">Insira o nome do Aluno 2 aqui</h2>
               <div
                 ref={canvas2Ref}
-                className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden cursor-grab active:cursor-grabbing"
+                className="w-full aspect-square rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden cursor-grab active:cursor-grabbing"
                 style={{ background: 'linear-gradient(135deg, #87CEEB, #e0f6ff)' }}
               />
-              <p className="max-w-[300px] sm:max-w-[350px] text-center text-[#555] text-sm mt-4 leading-relaxed">
+              <p className="w-full text-center text-[#555] text-xs sm:text-sm mt-4 leading-relaxed">
                 Descreva seu objeto aqui (ex: Avião de papel modelado no Blender...)
               </p>
             </div>
