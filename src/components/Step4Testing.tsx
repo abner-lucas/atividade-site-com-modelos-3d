@@ -86,7 +86,8 @@ export const Step4Testing: React.FC = () => {
     const height = container.clientHeight || 280;
 
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-    camera.position.set(0, 1.5, 4);
+    camera.position.set(0, 0.2, 4.2);
+    camera.lookAt(0, 0, 0);
     cameraRef.current = camera;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -108,7 +109,7 @@ export const Step4Testing: React.FC = () => {
     scene.add(fillLight);
 
     const grid = new THREE.GridHelper(5, 12, 0x475569, 0x1e293b);
-    grid.position.y = -0.5;
+    grid.position.y = -1.2;
     scene.add(grid);
 
     // Rotação com mouse
