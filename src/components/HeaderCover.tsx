@@ -6,7 +6,7 @@ export const HeaderCover: React.FC = () => {
   return (
     <header className="relative w-full border-b border-slate-200 bg-white">
       {/* Conteúdo do Documento no estilo Notion */}
-      <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 sm:pt-10 pb-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 pt-8 sm:pt-10 pb-8">
         {/* Ícone do documento (Estilo Notion) */}
         <div className="mb-4 flex items-center justify-between">
           <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-sm border border-slate-200/90 flex items-center justify-center text-3xl sm:text-4xl select-none transition-transform hover:scale-105">
@@ -36,7 +36,7 @@ export const HeaderCover: React.FC = () => {
         </div>
 
         {/* Subtítulo informativo */}
-        <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-3xl">
+        <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-5xl">
           Guia passo a passo para desenvolvimento em duplas do site interativo{' '}
           <strong className="text-slate-900 font-semibold">{activityConfig.projectName}</strong>, com
           integração de modelos 3D desenvolvidos no Tinkercad, biblioteca Three.js e publicação no Tiiny.host.

@@ -18,7 +18,7 @@ export default function App() {
       <HeaderCover />
 
       {/* Coluna Central de Leitura Estilo Documento / Notion */}
-      <main className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-12">
+      <main className="max-w-7xl mx-auto px-5 sm:px-8 pt-8 pb-12">
         {/* 2. Objetivo da Atividade */}
         <ObjetivoSection />
 
