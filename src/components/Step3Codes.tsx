@@ -226,7 +226,7 @@ export const Step3Codes: React.FC = () => {
               )}
             </button>
             <span className="text-[11px] text-blue-200">
-              Cont�m os 4 arquivos na raiz do ZIP
+              Contém os 4 arquivos na raiz do ZIP
             </span>
           </div>
         </div>
@@ -235,8 +235,8 @@ export const Step3Codes: React.FC = () => {
         <div className="p-4 rounded-lg bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 flex items-start gap-3">
           <Sparkles className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
           <p>
-            <strong>Importante sobre os modelos do pacote ZIP:</strong> O arquivo <code className="font-mono bg-white px-1.5 py-0.5 rounded border border-slate-200 text-blue-800">aviaozinho.glb</code> inclu�do no download � umcê testar a página imediatamente. 
-            A sua dupla deve <strong>substitu�-lo pelos modelos que vocês criaram e exportaram do Tinkercad</strong>.
+            <strong>Importante sobre os modelos do pacote ZIP:</strong> O arquivo <code className="font-mono bg-white px-1.5 py-0.5 rounded border border-slate-200 text-blue-800">aviaozinho.glb</code> incluído no download é um modelo demonstrativo para você testar a página imediatamente. 
+            A sua dupla deve <strong>substituí-lo pelos modelos que vocês criaram e exportaram do Tinkercad</strong>.
           </p>
         </div>
 
